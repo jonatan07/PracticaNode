@@ -1,0 +1,38 @@
+[
+    {
+        "Id": 1,
+        "Name": "Jonatan",
+        "LastName": "Delgado Valdez",
+        "Age": 31,
+        "IsContractor": true,
+        "TypeCustomer": "Fijo",
+        "CreatedAt": "01-11-2023"
+    },
+    {
+        "Id": 2,
+        "Name": "Ahnsy",
+        "LastName": "Limbal Morlan",
+        "Age": 37,
+        "IsContractor": true,
+        "TypeCustomer": "Fijo",
+        "CreatedAt": "01-11-2023"
+    },
+    {
+        "Id": 3,
+        "Name": "Edward",
+        "LastName": "Noboa Mato",
+        "Age": 34,
+        "IsContractor": false,
+        "TypeCustomer": "Fijo",
+        "CreatedAt": "01-11-2023"
+    },
+    {
+        "Id": 4,
+        "Name": "Danelis",
+        "LastName": "Rodriguez Delgado",
+        "Age": 33,
+        "IsContractor": false,
+        "TypeCustomer": "Fijo",
+        "CreatedAt": "01-11-2023"
+    }
+]
