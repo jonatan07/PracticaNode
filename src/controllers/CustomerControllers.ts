@@ -4,12 +4,12 @@ import * as customerServices from '../services/CustomerServices'
 const router = express.Router()
 /**
  * @openapi
- * /customer:
- *    get:
- *      description: Obtener una lista de clientes
- *      responses:
- *        200:
- *          description: Lista de usuarios
+ * /:
+ *   get:
+ *     description: Obtiene una lista de clientes sin procesar
+ *     responses:
+ *       200:
+ *         description: Lista de clientes sin procesar
  *         content:
  *           application/json:
  *             schema:
