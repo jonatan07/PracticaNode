@@ -2,7 +2,28 @@ import express from 'express'
 import * as customerServices from '../services/CustomerServices'
 
 const router = express.Router()
-
+/**
+ * @openapi
+ * /customer:
+ *    get:
+ *      description: Obtener una lista de clientes
+ *      responses:
+ *        200:
+ *          description: Lista de usuarios
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   name:
+ *                     type: string
+ *                     example: "John Doe"
+ */
 router.get('/', (_req, res) => {
   res.send(customerServices.getEntriesWithOut())
 })
