@@ -9,7 +9,7 @@ const options = {
     info: {
       title: 'Customer API',
       version: '1.0.0',
-      description: 'API de prueba para la generacion de clientes'
+      description: 'API de prueba para la generacion de clientes y utilidades relacionadas'
     },
     servers: [
       {

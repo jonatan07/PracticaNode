@@ -40,6 +40,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const customerServices = __importStar(require("../services/CustomerServices"));
 const router = express_1.default.Router();
+/**
+ * @openapi
+ * /:
+ *   get:
+ *     description: Obtiene una lista de clientes sin procesar
+ *     responses:
+ *       200:
+ *         description: Lista de clientes sin procesar
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   name:
+ *                     type: string
+ *                     example: "John Doe"
+ */
 router.get('/', (_req, res) => {
     res.send(customerServices.getEntriesWithOut());
 });
